@@ -4,11 +4,11 @@
 #include<vector>
 #include<sstream>
 #include "URLTest.h"
-#include <cppunit/ui/text/TestRunner.h>
-#include <cppunit/CompilerOutputter.h>
-#include <cppunit/TestResult.h>
-#include <cppunit/TestResultCollector.h>
-#include <cppunit/TextTestProgressListener.h>
+#include<cppunit/ui/text/TestRunner.h>
+#include<cppunit/CompilerOutputter.h>
+#include<cppunit/TestResult.h>
+#include<cppunit/TestResultCollector.h>
+#include<cppunit/TextTestProgressListener.h>
 
 using namespace std;
 
@@ -128,8 +128,7 @@ void process_index_files(vector<string>& segments) {
 
 std::string clean_url(const std::string& in) {
     // The normalization process of the URL follows  
-    // the RFC 3986 but with certain modifications,
-    // as specified in the problem statement.
+    // the RFC 3986 but with certain modifications.
     string inputURL = in;
     
     int pos = inputURL.find_first_of(";?#");
