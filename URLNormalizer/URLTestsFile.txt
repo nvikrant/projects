@@ -1,0 +1,17 @@
+http://www.www.THIS-IS.www.WRONG:4080/%7EJoe%5EBloggs//this/../index.html/;jsessionid=9a8237a7jf4987?z=&w=1&a=b#fragment      this-is.www.wrong:4080/~joe%5ebloggs
+
+ftp://www.www.THIS-IS.www.WRONG:80/%7E%7EJoe%5EBloggs//this/../index.html/;jsessionid=9a8237a7jf4987?z=&w=1&a=b#fragment      InvalidURL
+
+https://www.www.THIS-IS.www.WRONG:80/%7E%7EJoe%5EBloggs//this/../index1.html/;jsessionid=9a8237a7jf4987?z=&w=1&a=b#fragment   this-is.www.wrong/~~joe%5ebloggs/index1.html
+
+www.www.THIS-IS.www.WRONG:4080/%7EJoe%5EBloggs//this/../index.html/;jsessionid=9a8237a7jf4987?z=&w=1&a=b#fragment             this-is.www.wrong:4080/~joe%5ebloggs
+
+THIS-IS.www.WRONG:4080/%7EJoe%5EBloggs//this/../index.html/                    this-is.www.wrong:4080/~joe%5ebloggs
+
+THIS-IS.www.WRONG:4080/%7EJoe%5EBloggs//this/../default.asp/                   this-is.www.wrong:4080/~joe%5ebloggs
+
+THIS-IS.www.WRONG:80/%7EJoe%5E%7EBloggs//this/../default.asp/?id=name          this-is.www.wrong/~joe%5e~bloggs
+
+THIS-IS.www.WRONG:80/%7EJoe%5E%7EBloggs//this/../../././default.asp/?id=name   this-is.www.wrong
+
+
