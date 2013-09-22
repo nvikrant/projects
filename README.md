@@ -58,6 +58,9 @@ This is the code that I would like to share publicly.
 
     Execution:   The target maven folder contains a jar 'MazeSolverDemo*-jar-with-dependencies.jar'
                  'java -jar MazeSolverDemo*-jar-with-dependencies.jar <width> <height>'
-
+    
+    Output: A solid red line between the source and destination dots specifies the final path, whereas
+            the grey dotted path specifies the backtracking the algorithm did before reaching the destination.
+            See images for sample output.
     TODO: Implement different maze generation algorithms like recursive divsion, hunt-and-kill etc..,
             
