@@ -70,7 +70,7 @@ public class MazeCanvas {
         fgMaze = fgImage.createGraphics();
 
     }
-    private void initMazeUI(int width, int height) {
+    private void initMazeUI() {
         setXscale(0, width + 2);
         setYscale(0, height + 2);
         setPenColor(DEFAULT_PEN_COLOR);
@@ -172,8 +172,8 @@ public class MazeCanvas {
         this.height = height;
 
         initCanvas();
-        initMazeUI(width, height);
-        drawMaze(width, height);
+        initMazeUI();
+        drawMaze();
     }
     
     /** 
@@ -194,7 +194,7 @@ public class MazeCanvas {
         pause(1000);
     }
 
-    private void drawMaze(int width, int height) {
+    private void drawMaze() {
         Maze maze = new Maze(width, height);
         wallGrids = maze.getWallGrids();
         visitMatrix = maze.getVisitMatrix();
