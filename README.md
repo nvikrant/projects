@@ -1,9 +1,30 @@
 projects
 ========
 
-This will house all my code that I would like to share publicly.
+This will house all my projects. It does not have any language specific repo.
+This is the code that I would like to share publicly.
 
-(1) MazeSolver: Maze solving is one of the cool projects to do in Computer Science.
+(1) URLNormalizer: This is a common implementation of a URL Normalizer used by
+                   web servers like Apache to normalize a URL submitted by the 
+                   HTTP client before taking any action on a resource.
+                   This follows the guidelines for RFC 3986 but with certain 
+                   modifications. This has the following files:
+
+    1. URL.cpp - This file implements all the normalizing methods on a given
+                 url.
+
+    2. URLTest.h - This file has the cppUnit bootstrapping for testing the 
+                   normalization process on a set of urls.
+   
+    3. URLTestsFile.txt - A set of urls used for testing the normalization.
+    
+    Compilation: g++ URL.cpp -o URLTool -lCppUnit
+
+    Execution: ./URLTool
+                   
+
+
+(2) MazeSolver: Maze solving is one of the cool projects to do in Computer Science.
                 This is a simple maze solver application using awt and swing.
                 The generation/solution algorithm used is DFS. The start and 
                 end points in the maze are randomly choosen at program start.
