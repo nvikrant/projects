@@ -7,6 +7,7 @@ import java.awt.*;
  * This Class extends the MazeCanvas to reuse the
  * maze UI elements and code.
  */
+
 public class MazePathFinder extends MazeCanvas {
     private int pointEndX;
     private int pointEndY;
@@ -16,11 +17,10 @@ public class MazePathFinder extends MazeCanvas {
         super(width, height);
         setVisits();
     }
-    
-    /** 
-     * Initialize the visitMatrix[1...width][y...height]
-     * to unvisited before any path finding algorithm so
-     * that the algorithm can reboot.
+
+    /** Initialize the visitMatrix[1...width][y...height]
+     *  to unvisited before any path finding algorithm so
+     *  that the algorithm can reboot.
      */
     public void setVisits() {
         for (int x = 1; x <= width; x++)
@@ -28,9 +28,8 @@ public class MazePathFinder extends MazeCanvas {
                 visitMatrix[x][y] = false;
 
     }
-    
-    /** 
-     * Set the two start and end dots on the maze.
+
+    /** Set the two start and end dots on the maze.
      *
      * @param x is the x-coordinate of the start dot.
      * @param y is the y-coordinate of the start dot.
@@ -40,13 +39,12 @@ public class MazePathFinder extends MazeCanvas {
     public void setMazeStartEnd(int x, int y, int x1, int y1) {
         pointEndX = x1;
         pointEndY = y1;
-
         setPenColor(BOOK_RED);
         filledCircle(x + 0.5, y + 0.5, 0.375);
         filledCircle(pointEndX + 0.5, pointEndY + 0.5, 0.375);
         refreshScreen();
     }
-    
+
     /**
      * Starting displaying the path animation.
      * @param x is the x-coordinate of the start dot.
@@ -61,7 +59,7 @@ public class MazePathFinder extends MazeCanvas {
             setPenColor(BOOK_RED);
             pause(100);
 
-            //Reached destination??
+            //Reached destination
             if (x == pointEndX && y == pointEndY) complete = true;
 
             if (!wallGrids[0][x][y]) {

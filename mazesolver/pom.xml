@@ -15,7 +15,7 @@
                     <archive>
                         <manifest>
                             <mainClass>org.nvikrant.mazesolver.MazeSolver</mainClass>
-                        </manifest>          
+                        </manifest>
                     </archive>
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
@@ -23,8 +23,8 @@
                 </configuration>
                 <executions>
                     <execution>
-                        <id>make-assembly</id> 
-                        <phase>package</phase> 
+                        <id>make-assembly</id>
+                        <phase>package</phase>
                         <goals>
                             <goal>single</goal>
                         </goals>
@@ -33,4 +33,5 @@
             </plugin>
         </plugins>
     </build>
+    
 </project>

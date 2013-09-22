@@ -9,11 +9,11 @@ import org.nvikrant.mazesolver.utils.MazeSolverUtils;
 public class MazeSolver {
     public static void main(String[] args) {
 
-        /** 
-         * Now we accept only 2 args for width and height.
-         * Once we have different algorithms for generating
-         * the maze we can take a 3rd arg for the algorithm.
+        /** Now we accept only 2 args for width and height.
+         *  Once we have different algorithms for generating
+         *  the maze we can take a 3rd arg for the algorithm.
          */
+
         if(args.length != 2) {
             System.out.println("usage: java -jar mazesolver.jar <width> <height>");
             System.exit(1);
@@ -23,7 +23,7 @@ public class MazeSolver {
             int width  = Integer.parseInt(args[0]);
             int height = Integer.parseInt(args[1]);
             MazePathFinder canvas = new MazePathFinder(width, height);
-            
+
             /**
              * Randomize the start and end position dots
              * in the maze.
@@ -37,7 +37,7 @@ public class MazeSolver {
             canvas.displayPath(x0, y0);
         }
         catch(Exception ex) {
-            System.out.println("Error in execution!!");
+            System.out.println("Error in Execution!!");
             System.exit(1);
         }
     }

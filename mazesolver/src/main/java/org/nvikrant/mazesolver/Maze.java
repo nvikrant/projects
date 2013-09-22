@@ -1,12 +1,11 @@
 package org.nvikrant.mazesolver;
 
 /**
-* Created by nvikrant on 9/19/13.
-* The main maze data structure.
-* This abstracts the maze cells and
-* initializes the walls and the visit matrix.
-*/
-
+ * Created by nvikrant on 9/19/13.
+ * The main maze data structure.
+ * This abstracts the maze cells and
+ * initializes the walls and the visit matrix.
+ */
 public class Maze {
     private boolean north[][];
     private boolean south[][];
@@ -14,7 +13,7 @@ public class Maze {
     private boolean east[][];
     private boolean visited[][];
     private int width, height;
-    
+
     /* Initialize the maze with the correct
      * width and height.
      */
@@ -28,7 +27,7 @@ public class Maze {
             System.out.println(e.getMessage());
         }
     }
-    
+
     /**
      * Set the visits for the border cells, so that
      * all of the algorithms work fine with any corner
@@ -41,10 +40,11 @@ public class Maze {
             visited[x][0] = visited[x][height+1] = true;
         for (int y = 0; y < height+2; y++)
             visited[0][y] = visited[width+1][y] = true;
+
     }
 
     private void initGrid(int width, int height) {
-        if(width <2 || height < 2){
+        if(width <2 || height < 2) {
             throw new IllegalArgumentException("Illegal width|height, height and width > 2");
         }
 

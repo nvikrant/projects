@@ -10,4 +10,5 @@ public class MazeSolverUtils {
     public static int getRandom(int range){
         return (int)Math.ceil(Math.random() * range);
     }
+
 }

@@ -7,7 +7,7 @@ package org.nvikrant.mazesolver;
  * the algorithm specific wall carving in the maze.
  */
 public class MazeGeneratorDFS extends MazeGenerator {
-    
+
     private void collapseWall(int x, int y) {
         visitGrid[x][y] = true;
 
@@ -40,14 +40,15 @@ public class MazeGeneratorDFS extends MazeGenerator {
                 }
             }
         }
+
     }
-    
+
     @Override
     public void generate(int x, int y) {
         collapseWall(x, y);
     }
 
-    public MazeGenerator(final boolean[][][] wallGrids,
+    public MazeGeneratorDFS(final boolean[][][] wallGrids,
                          final boolean[][] visitGrid) {
         super(wallGrids, visitGrid);
     }
